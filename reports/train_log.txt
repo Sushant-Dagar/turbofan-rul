@@ -1,0 +1,43 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792435832.639798     638 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1792435832.680287     638 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792435833.976372     638 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Rows: 160,359 train, 104,897 test | engines: 567 fit, 142 val, 707 test | sensors used: 16
+Windows: 128,469 train, 31,890 val, 707 test (one per test engine)
+Random Forest done (74s)
+Epoch 1/40
+502/502 - 29s - 58ms/step - loss: 0.0328 - rmse: 0.1810 - val_loss: 0.0157 - val_rmse: 0.1252 - learning_rate: 0.0010
+Epoch 2/40
+502/502 - 40s - 79ms/step - loss: 0.0161 - rmse: 0.1268 - val_loss: 0.0155 - val_rmse: 0.1245 - learning_rate: 0.0010
+Epoch 3/40
+502/502 - 26s - 51ms/step - loss: 0.0136 - rmse: 0.1164 - val_loss: 0.0153 - val_rmse: 0.1235 - learning_rate: 0.0010
+Epoch 4/40
+502/502 - 39s - 78ms/step - loss: 0.0124 - rmse: 0.1113 - val_loss: 0.0152 - val_rmse: 0.1234 - learning_rate: 0.0010
+Epoch 5/40
+502/502 - 23s - 46ms/step - loss: 0.0117 - rmse: 0.1080 - val_loss: 0.0147 - val_rmse: 0.1214 - learning_rate: 0.0010
+Epoch 6/40
+502/502 - 43s - 85ms/step - loss: 0.0112 - rmse: 0.1056 - val_loss: 0.0145 - val_rmse: 0.1206 - learning_rate: 0.0010
+Epoch 7/40
+502/502 - 40s - 79ms/step - loss: 0.0107 - rmse: 0.1033 - val_loss: 0.0146 - val_rmse: 0.1207 - learning_rate: 0.0010
+Epoch 8/40
+502/502 - 43s - 86ms/step - loss: 0.0103 - rmse: 0.1014 - val_loss: 0.0151 - val_rmse: 0.1228 - learning_rate: 0.0010
+Epoch 9/40
+502/502 - 23s - 45ms/step - loss: 0.0099 - rmse: 0.0996 - val_loss: 0.0155 - val_rmse: 0.1244 - learning_rate: 0.0010
+Epoch 10/40
+502/502 - 23s - 46ms/step - loss: 0.0091 - rmse: 0.0956 - val_loss: 0.0167 - val_rmse: 0.1294 - learning_rate: 5.0000e-04
+Epoch 11/40
+502/502 - 42s - 84ms/step - loss: 0.0089 - rmse: 0.0941 - val_loss: 0.0168 - val_rmse: 0.1296 - learning_rate: 5.0000e-04
+Epoch 12/40
+502/502 - 26s - 52ms/step - loss: 0.0086 - rmse: 0.0929 - val_loss: 0.0169 - val_rmse: 0.1301 - learning_rate: 5.0000e-04
+
+Test RMSE (cycles) by sub-dataset
+       Mean baseline  Random Forest  LSTM (TensorFlow)
+ALL            44.67          13.60              14.42
+FD001          43.07          12.96              13.75
+FD002          46.02          13.21              14.63
+FD003          42.49          12.69              12.46
+FD004          44.73          14.58              15.17
+
+Done in 476s

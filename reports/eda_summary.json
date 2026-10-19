@@ -1,0 +1,76 @@
+{
+  "train_rows": 160359,
+  "test_rows": 104897,
+  "total_rows": 265256,
+  "train_engines": 709,
+  "test_engines": 707,
+  "per_subset": {
+    "FD001": {
+      "train_rows": 20631,
+      "train_engines": 100,
+      "conditions": 1,
+      "median_life_cycles": 199.0
+    },
+    "FD002": {
+      "train_rows": 53759,
+      "train_engines": 260,
+      "conditions": 6,
+      "median_life_cycles": 199.0
+    },
+    "FD003": {
+      "train_rows": 24720,
+      "train_engines": 100,
+      "conditions": 1,
+      "median_life_cycles": 220.5
+    },
+    "FD004": {
+      "train_rows": 61249,
+      "train_engines": 249,
+      "conditions": 6,
+      "median_life_cycles": 234.0
+    }
+  },
+  "sensors_dropped_flat": [
+    "s1",
+    "s5",
+    "s16",
+    "s18",
+    "s19"
+  ],
+  "sensors_used": [
+    "s2",
+    "s3",
+    "s4",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "corr_with_rul": {
+    "s11": -0.766,
+    "s4": -0.734,
+    "s17": -0.672,
+    "s3": -0.647,
+    "s2": -0.623,
+    "s9": -0.535,
+    "s13": -0.528,
+    "s8": -0.528,
+    "s14": -0.444,
+    "s10": -0.246,
+    "s15": -0.24,
+    "s6": -0.149,
+    "s12": -0.134,
+    "s7": -0.109,
+    "s21": 0.243,
+    "s20": 0.246
+  }
+}

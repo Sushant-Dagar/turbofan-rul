@@ -1,0 +1,137 @@
+{
+  "config": {
+    "window": 30,
+    "rul_cap": 125,
+    "epochs_run": 12,
+    "seed": 42,
+    "sensors_used": [
+      "s2",
+      "s3",
+      "s4",
+      "s6",
+      "s7",
+      "s8",
+      "s9",
+      "s10",
+      "s11",
+      "s12",
+      "s13",
+      "s14",
+      "s15",
+      "s17",
+      "s20",
+      "s21"
+    ],
+    "quick": false
+  },
+  "data": {
+    "train_rows": 160359,
+    "test_rows": 104897,
+    "train_windows": 128469,
+    "val_windows": 31890,
+    "test_engines": 707
+  },
+  "validation_rmse": {
+    "Random Forest": 13.73,
+    "LSTM (TensorFlow)": 15.08
+  },
+  "test": {
+    "Mean baseline": {
+      "ALL": {
+        "rmse": 44.67,
+        "mae": 37.4,
+        "nasa_score": 376079.3,
+        "n": 707
+      },
+      "FD001": {
+        "rmse": 43.07,
+        "mae": 34.93,
+        "nasa_score": 46701.2,
+        "n": 100
+      },
+      "FD002": {
+        "rmse": 46.02,
+        "mae": 38.58,
+        "nasa_score": 160503.0,
+        "n": 259
+      },
+      "FD003": {
+        "rmse": 42.49,
+        "mae": 35.66,
+        "nasa_score": 43279.9,
+        "n": 100
+      },
+      "FD004": {
+        "rmse": 44.73,
+        "mae": 37.86,
+        "nasa_score": 125595.3,
+        "n": 248
+      }
+    },
+    "Random Forest": {
+      "ALL": {
+        "rmse": 13.6,
+        "mae": 9.88,
+        "nasa_score": 2368.1,
+        "n": 707
+      },
+      "FD001": {
+        "rmse": 12.96,
+        "mae": 9.37,
+        "nasa_score": 302.1,
+        "n": 100
+      },
+      "FD002": {
+        "rmse": 13.21,
+        "mae": 9.68,
+        "nasa_score": 746.9,
+        "n": 259
+      },
+      "FD003": {
+        "rmse": 12.69,
+        "mae": 9.32,
+        "nasa_score": 279.7,
+        "n": 100
+      },
+      "FD004": {
+        "rmse": 14.58,
+        "mae": 10.51,
+        "nasa_score": 1039.4,
+        "n": 248
+      }
+    },
+    "LSTM (TensorFlow)": {
+      "ALL": {
+        "rmse": 14.42,
+        "mae": 11.13,
+        "nasa_score": 2556.9,
+        "n": 707
+      },
+      "FD001": {
+        "rmse": 13.75,
+        "mae": 10.14,
+        "nasa_score": 333.0,
+        "n": 100
+      },
+      "FD002": {
+        "rmse": 14.63,
+        "mae": 11.35,
+        "nasa_score": 928.4,
+        "n": 259
+      },
+      "FD003": {
+        "rmse": 12.46,
+        "mae": 9.73,
+        "nasa_score": 247.1,
+        "n": 100
+      },
+      "FD004": {
+        "rmse": 15.17,
+        "mae": 11.87,
+        "nasa_score": 1048.5,
+        "n": 248
+      }
+    }
+  },
+  "runtime_seconds": 476
+}
